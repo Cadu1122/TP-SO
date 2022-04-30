@@ -1,0 +1,170 @@
+nome: Arthur Armanelli; total de produtos: 1120; prazo: 90; horario de finalização: 09:14:48
+nome: Bruno Romie; total de produtos: 320; prazo: sem prazo; horario de finalização: 10:58:12
+nome: Ian Sousa; total de produtos: 640; prazo: sem prazo; horario de finalização: 12:14:50
+nome: Amanda Lima; total de produtos: 560; prazo: sem prazo; horario de finalização: 11:43:40
+nome: Isabella Lima; total de produtos: 80; prazo: 180; horario de finalização: 09:46:20
+nome: Matthew Lima; total de produtos: 80; prazo: sem prazo; horario de finalização: 10:36:12
+nome: Mateus Carmo; total de produtos: 640; prazo: 240; horario de finalização: 10:35:50
+nome: Maria Sousa; total de produtos: 720; prazo: sem prazo; horario de finalização: 12:56:16
+nome: Isabella Romie; total de produtos: 240; prazo: sem prazo; horario de finalização: 10:49:02
+nome: Maria Meira; total de produtos: 640; prazo: sem prazo; horario de finalização: 12:17:46
+nome: AndrÃ© Guelman; total de produtos: 1280; prazo: 90; horario de finalização: 09:20:40
+nome: AndrÃ© Laine; total de produtos: 720; prazo: sem prazo; horario de finalização: 12:59:34
+nome: TÃºlio Sousa; total de produtos: 1360; prazo: sem prazo; horario de finalização: 14:41:52
+nome: Isabella Apolinario; total de produtos: 1440; prazo: 180; horario de finalização: 09:52:56
+nome: AndrÃ© Santos; total de produtos: 560; prazo: sem prazo; horario de finalização: 11:46:14
+nome: AndrÃ© Lima; total de produtos: 560; prazo: 170; horario de finalização: 09:45:58
+nome: Bruno Sousa; total de produtos: 880; prazo: sem prazo; horario de finalização: 13:44:18
+nome: Isabella Bolognani; total de produtos: 720; prazo: sem prazo; horario de finalização: 13:02:52
+nome: Rodrigo Rocha; total de produtos: 400; prazo: sem prazo; horario de finalização: 11:10:18
+nome: AndrÃ© Sousa; total de produtos: 480; prazo: sem prazo; horario de finalização: 11:23:30
+nome: Lucas Armanelli; total de produtos: 480; prazo: sem prazo; horario de finalização: 11:25:42
+nome: Mateus Armanelli; total de produtos: 480; prazo: sem prazo; horario de finalização: 11:27:54
+nome: Mateus Laine; total de produtos: 160; prazo: 160; horario de finalização: 09:34:36
+nome: Matthew Armanelli; total de produtos: 720; prazo: sem prazo; horario de finalização: 13:06:10
+nome: Maria Guelman; total de produtos: 240; prazo: 200; horario de finalização: 09:55:30
+nome: Bruno Laine; total de produtos: 400; prazo: sem prazo; horario de finalização: 11:12:08
+nome: Isabella Rocha; total de produtos: 640; prazo: 70; horario de finalização: 09:00:52
+nome: VÃ­tor Leal; total de produtos: 400; prazo: sem prazo; horario de finalização: 11:13:58
+nome: VÃ­tor Meira; total de produtos: 720; prazo: sem prazo; horario de finalização: 13:09:28
+nome: TÃºlio Guelman; total de produtos: 160; prazo: sem prazo; horario de finalização: 10:39:52
+nome: Arthur Sousa; total de produtos: 480; prazo: sem prazo; horario de finalização: 11:30:06
+nome: Ian Bolognani; total de produtos: 1200; prazo: 160; horario de finalização: 09:43:24
+nome: Mateus Rocha; total de produtos: 80; prazo: sem prazo; horario de finalização: 10:36:34
+nome: Isabella Santos; total de produtos: 1200; prazo: 20; horario de finalização: 08:09:10
+nome: Ian Apolinario; total de produtos: 560; prazo: sem prazo; horario de finalização: 11:48:48
+nome: VÃ­tor Santos; total de produtos: 2320; prazo: sem prazo; horario de finalização: 16:47:16
+nome: VÃ­tor Apolinario; total de produtos: 1040; prazo: sem prazo; horario de finalização: 14:09:58
+nome: Bruno Romie; total de produtos: 160; prazo: sem prazo; horario de finalização: 10:40:36
+nome: Isabella Laine; total de produtos: 1360; prazo: sem prazo; horario de finalização: 14:48:06
+nome: Lucas Santos; total de produtos: 80; prazo: sem prazo; horario de finalização: 10:36:56
+nome: TÃºlio Meira; total de produtos: 640; prazo: sem prazo; horario de finalização: 12:20:42
+nome: TÃºlio Meira; total de produtos: 560; prazo: sem prazo; horario de finalização: 11:51:22
+nome: AndrÃ© Meira; total de produtos: 240; prazo: sem prazo; horario de finalização: 10:50:08
+nome: Ian Laine; total de produtos: 240; prazo: sem prazo; horario de finalização: 10:51:14
+nome: Rodrigo Laine; total de produtos: 400; prazo: sem prazo; horario de finalização: 11:15:48
+nome: Mateus Sousa; total de produtos: 320; prazo: 40; horario de finalização: 08:31:32
+nome: Isabella Bolognani; total de produtos: 1280; prazo: sem prazo; horario de finalização: 14:35:38
+nome: VÃ­tor Guelman; total de produtos: 1760; prazo: sem prazo; horario de finalização: 15:59:36
+nome: TÃºlio Bolognani; total de produtos: 880; prazo: sem prazo; horario de finalização: 13:48:20
+nome: VÃ­tor Rocha; total de produtos: 960; prazo: sem prazo; horario de finalização: 14:00:48
+nome: Arthur Guelman; total de produtos: 320; prazo: 200; horario de finalização: 09:56:58
+nome: Lucas Bolognani; total de produtos: 560; prazo: sem prazo; horario de finalização: 11:53:56
+nome: Isabella Apolinario; total de produtos: 400; prazo: 160; horario de finalização: 09:37:54
+nome: Isabella Bolognani; total de produtos: 160; prazo: sem prazo; horario de finalização: 10:41:20
+nome: Lucas Guelman; total de produtos: 160; prazo: sem prazo; horario de finalização: 10:42:04
+nome: Amanda Bolognani; total de produtos: 560; prazo: sem prazo; horario de finalização: 11:56:30
+nome: TÃºlio Meira; total de produtos: 240; prazo: sem prazo; horario de finalização: 10:52:20
+nome: Matthew Carmo; total de produtos: 1600; prazo: 20; horario de finalização: 08:16:30
+nome: AndrÃ© Armanelli; total de produtos: 2320; prazo: 50; horario de finalização: 08:53:10
+nome: Amanda Apolinario; total de produtos: 1280; prazo: 220; horario de finalização: 10:18:14
+nome: Isabella Bolognani; total de produtos: 880; prazo: sem prazo; horario de finalização: 13:52:22
+nome: VÃ­tor Lima; total de produtos: 560; prazo: sem prazo; horario de finalização: 11:59:04
+nome: AndrÃ© Leal; total de produtos: 880; prazo: sem prazo; horario de finalização: 13:56:24
+nome: Arthur Carmo; total de produtos: 720; prazo: sem prazo; horario de finalização: 13:12:46
+nome: Matthew Meira; total de produtos: 80; prazo: sem prazo; horario de finalização: 10:37:18
+nome: VÃ­tor Sousa; total de produtos: 560; prazo: sem prazo; horario de finalização: 12:01:38
+nome: Lucas Sousa; total de produtos: 480; prazo: sem prazo; horario de finalização: 11:32:18
+nome: Rodrigo Romie; total de produtos: 1360; prazo: 30; horario de finalização: 08:30:04
+nome: Bruno Lima; total de produtos: 2240; prazo: 230; horario de finalização: 10:31:26
+nome: Arthur Rocha; total de produtos: 80; prazo: sem prazo; horario de finalização: 10:37:40
+nome: Maria Laine; total de produtos: 240; prazo: 80; horario de finalização: 09:05:38
+nome: AndrÃ© Romie; total de produtos: 400; prazo: sem prazo; horario de finalização: 11:17:38
+nome: Arthur Romie; total de produtos: 240; prazo: sem prazo; horario de finalização: 10:53:26
+nome: Bruno Rocha; total de produtos: 160; prazo: sem prazo; horario de finalização: 10:42:48
+nome: Bruno Carmo; total de produtos: 2160; prazo: sem prazo; horario de finalização: 16:26:22
+nome: Arthur Santos; total de produtos: 800; prazo: sem prazo; horario de finalização: 13:32:56
+nome: Bruno Romie; total de produtos: 1040; prazo: sem prazo; horario de finalização: 14:14:44
+nome: Ian Leal; total de produtos: 320; prazo: sem prazo; horario de finalização: 10:59:40
+nome: VÃ­tor Armanelli; total de produtos: 800; prazo: sem prazo; horario de finalização: 13:36:36
+nome: VÃ­tor Carmo; total de produtos: 1680; prazo: sem prazo; horario de finalização: 15:43:50
+nome: Maria Armanelli; total de produtos: 1600; prazo: sem prazo; horario de finalização: 15:21:28
+nome: Maria Apolinario; total de produtos: 400; prazo: 120; horario de finalização: 09:26:10
+nome: Mateus Romie; total de produtos: 640; prazo: 80; horario de finalização: 09:08:34
+nome: Isabella Apolinario; total de produtos: 240; prazo: 150; horario de finalização: 09:31:40
+nome: Arthur Leal; total de produtos: 640; prazo: sem prazo; horario de finalização: 12:23:38
+nome: Matthew Apolinario; total de produtos: 480; prazo: 150; horario de finalização: 09:33:52
+nome: VÃ­tor Laine; total de produtos: 720; prazo: sem prazo; horario de finalização: 13:16:04
+nome: Matthew Laine; total de produtos: 1040; prazo: sem prazo; horario de finalização: 14:19:30
+nome: Rodrigo Santos; total de produtos: 1360; prazo: sem prazo; horario de finalização: 14:54:20
+nome: TÃºlio Santos; total de produtos: 160; prazo: 160; horario de finalização: 09:35:20
+nome: Matthew Guelman; total de produtos: 640; prazo: 60; horario de finalização: 08:56:06
+nome: Lucas Rocha; total de produtos: 1680; prazo: sem prazo; horario de finalização: 15:51:32
+nome: Ian Rocha; total de produtos: 160; prazo: sem prazo; horario de finalização: 10:43:32
+nome: Rodrigo Guelman; total de produtos: 640; prazo: 120; horario de finalização: 09:29:06
+nome: Lucas Laine; total de produtos: 240; prazo: sem prazo; horario de finalização: 10:54:32
+nome: Maria Lima; total de produtos: 1360; prazo: sem prazo; horario de finalização: 15:00:34
+nome: Bruno Apolinario; total de produtos: 320; prazo: 210; horario de finalização: 10:01:22
+nome: Ian Romie; total de produtos: 1440; prazo: sem prazo; horario de finalização: 15:07:10
+nome: Ian Armanelli; total de produtos: 640; prazo: sem prazo; horario de finalização: 12:26:34
+nome: Matthew Santos; total de produtos: 320; prazo: sem prazo; horario de finalização: 11:01:08
+nome: Bruno Armanelli; total de produtos: 400; prazo: sem prazo; horario de finalização: 11:19:28
+nome: Matthew Romie; total de produtos: 1440; prazo: 40; horario de finalização: 08:42:32
+nome: AndrÃ© Apolinario; total de produtos: 240; prazo: 90; horario de finalização: 09:09:40
+nome: TÃºlio Meira; total de produtos: 800; prazo: 70; horario de finalização: 09:04:32
+nome: Rodrigo Bolognani; total de produtos: 400; prazo: sem prazo; horario de finalização: 11:21:18
+nome: Mateus Meira; total de produtos: 720; prazo: sem prazo; horario de finalização: 13:19:22
+nome: TÃºlio Leal; total de produtos: 2400; prazo: sem prazo; horario de finalização: 16:58:16
+nome: Arthur Lima; total de produtos: 80; prazo: sem prazo; horario de finalização: 10:38:02
+nome: Amanda Romie; total de produtos: 640; prazo: sem prazo; horario de finalização: 12:29:30
+nome: AndrÃ© Carmo; total de produtos: 320; prazo: sem prazo; horario de finalização: 11:02:36
+nome: Arthur Bolognani; total de produtos: 720; prazo: sem prazo; horario de finalização: 13:22:40
+nome: Lucas Apolinario; total de produtos: 480; prazo: sem prazo; horario de finalização: 11:34:30
+nome: Arthur Meira; total de produtos: 1840; prazo: sem prazo; horario de finalização: 16:08:02
+nome: Maria Romie; total de produtos: 320; prazo: sem prazo; horario de finalização: 11:04:04
+nome: Rodrigo Lima; total de produtos: 640; prazo: sem prazo; horario de finalização: 12:32:26
+nome: VÃ­tor Romie; total de produtos: 960; prazo: 40; horario de finalização: 08:35:56
+nome: Isabella Apolinario; total de produtos: 640; prazo: sem prazo; horario de finalização: 12:35:22
+nome: Arthur Apolinario; total de produtos: 80; prazo: sem prazo; horario de finalização: 10:38:24
+nome: Rodrigo Leal; total de produtos: 720; prazo: sem prazo; horario de finalização: 13:25:58
+nome: Amanda Armanelli; total de produtos: 640; prazo: sem prazo; horario de finalização: 12:38:18
+nome: Lucas Romie; total de produtos: 160; prazo: sem prazo; horario de finalização: 10:44:16
+nome: Bruno Meira; total de produtos: 160; prazo: sem prazo; horario de finalização: 10:45
+nome: TÃºlio Laine; total de produtos: 640; prazo: sem prazo; horario de finalização: 12:41:14
+nome: Ian Santos; total de produtos: 1040; prazo: sem prazo; horario de finalização: 14:24:16
+nome: Isabella Sousa; total de produtos: 160; prazo: 20; horario de finalização: 08:00:44
+nome: Rodrigo Sousa; total de produtos: 160; prazo: sem prazo; horario de finalização: 10:45:44
+nome: Mateus Santos; total de produtos: 1600; prazo: sem prazo; horario de finalização: 15:28:48
+nome: Lucas Carmo; total de produtos: 960; prazo: sem prazo; horario de finalização: 14:05:12
+nome: VÃ­tor Bolognani; total de produtos: 80; prazo: sem prazo; horario de finalização: 10:38:46
+nome: Amanda Guelman; total de produtos: 2240; prazo: sem prazo; horario de finalização: 16:36:38
+nome: Ian Guelman; total de produtos: 80; prazo: sem prazo; horario de finalização: 10:39:08
+nome: Amanda Carmo; total de produtos: 320; prazo: sem prazo; horario de finalização: 11:05:32
+nome: Matthew Sousa; total de produtos: 800; prazo: sem prazo; horario de finalização: 13:40:16
+nome: Isabella Armanelli; total de produtos: 1520; prazo: sem prazo; horario de finalização: 15:14:08
+nome: Ian Lima; total de produtos: 400; prazo: 70; horario de finalização: 08:57:56
+nome: Mateus Apolinario; total de produtos: 2400; prazo: 210; horario de finalização: 10:12:22
+nome: Amanda Rocha; total de produtos: 1200; prazo: sem prazo; horario de finalização: 14:29:46
+nome: Ian Carmo; total de produtos: 1600; prazo: sem prazo; horario de finalização: 15:36:08
+nome: TÃºlio Apolinario; total de produtos: 240; prazo: sem prazo; horario de finalização: 10:55:38
+nome: Isabella Apolinario; total de produtos: 320; prazo: 190; horario de finalização: 09:54:24
+nome: Matthew Rocha; total de produtos: 160; prazo: sem prazo; horario de finalização: 10:46:28
+nome: Matthew Sousa; total de produtos: 160; prazo: sem prazo; horario de finalização: 10:47:12
+nome: Lucas Meira; total de produtos: 160; prazo: sem prazo; horario de finalização: 10:47:56
+nome: Mateus Bolognani; total de produtos: 1600; prazo: 20; horario de finalização: 08:23:50
+nome: Maria Santos; total de produtos: 560; prazo: sem prazo; horario de finalização: 12:04:12
+nome: Amanda Meira; total de produtos: 640; prazo: 230; horario de finalização: 10:21:10
+nome: TÃºlio Romie; total de produtos: 480; prazo: sem prazo; horario de finalização: 11:36:42
+nome: Matthew Sousa; total de produtos: 560; prazo: sem prazo; horario de finalização: 12:06:46
+nome: TÃºlio Carmo; total de produtos: 160; prazo: 140; horario de finalização: 09:29:50
+nome: Bruno Santos; total de produtos: 640; prazo: 200; horario de finalização: 09:59:54
+nome: TÃºlio Lima; total de produtos: 640; prazo: sem prazo; horario de finalização: 12:44:10
+nome: Bruno Romie; total de produtos: 320; prazo: sem prazo; horario de finalização: 11:07
+nome: Amanda Laine; total de produtos: 240; prazo: sem prazo; horario de finalização: 10:56:44
+nome: Matthew Sousa; total de produtos: 480; prazo: sem prazo; horario de finalização: 11:38:54
+nome: Amanda Leal; total de produtos: 480; prazo: sem prazo; horario de finalização: 11:41:06
+nome: Lucas Leal; total de produtos: 320; prazo: 20; horario de finalização: 08:02:12
+nome: Isabella Meira; total de produtos: 160; prazo: 160; horario de finalização: 09:36:04
+nome: Isabella Guelman; total de produtos: 720; prazo: sem prazo; horario de finalização: 13:29:16
+nome: Ian Meira; total de produtos: 320; prazo: sem prazo; horario de finalização: 11:08:28
+nome: Bruno Bolognani; total de produtos: 1840; prazo: sem prazo; horario de finalização: 16:16:28
+nome: Rodrigo Armanelli; total de produtos: 320; prazo: 20; horario de finalização: 08:03:40
+nome: TÃºlio Armanelli; total de produtos: 320; prazo: 240; horario de finalização: 10:32:54
+nome: Maria Bolognani; total de produtos: 640; prazo: sem prazo; horario de finalização: 12:47:06
+nome: Matthew Bolognani; total de produtos: 640; prazo: sem prazo; horario de finalização: 12:50:02
+nome: Ian Guelman; total de produtos: 560; prazo: sem prazo; horario de finalização: 12:11:54
+nome: Ian Guelman; total de produtos: 640; prazo: sem prazo; horario de finalização: 12:52:58
+Tempo de término: 16:58:16
+Quantidade de pedidos entregues após o prazo: 4
+Quantidade de pedidos entregues antes de meio dia: 106
+Média do horário de pedidos entregues: 11:39:54
