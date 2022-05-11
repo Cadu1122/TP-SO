@@ -9,18 +9,26 @@ import java.util.List;
 public class Simulacao {
     private LocalTime horario;
     private int qtdPedidosPerdidos;
-    private BracoMecanico braco;
-    private Esteira esteira;
+    private BracoMecanico[] braco;
+    private Esteira[] esteira;
     private List<Pedido> pedidos;
+    private List<Pedido> pedidosIncluir;
     private int qtdPedidosAntes12;
     private LocalTime mediaTempoEntrega;
+    private long media;
 
     public Simulacao() {
         horario = LocalTime.of(8, 0);
         pedidos = new LinkedList<>();
-        braco = new BracoMecanico();
-        esteira = new Esteira(braco);
+        braco = new BracoMecanico[2];
+        braco[0] = new BracoMecanico();
+        braco[1] = new BracoMecanico();
+        pedidosIncluir = new LinkedList<>();
+        esteira = new Esteira[2];
+        esteira[0] = new Esteira(braco[0]);
+        esteira[1] = new Esteira(braco[1]);
         this.qtdPedidosPerdidos = 0;
+        this.qtdPedidosAntes12 = 0;
     }
 
     public LocalTime getMediaTempoEntrega() {
@@ -51,31 +59,73 @@ public class Simulacao {
         return horario;
     }
 
-    public void executar() {
+    private void init () {
         for (Pedido pedido : pedidos) {
-            esteira.addPedido(pedido);
-        }
-        long horarioMedio = 0;
-        while(esteira.hasPedido()) {
-            moverEsteira();
-            Pedido pedido = braco.entregar().getPedido();
-            if(pedido.getQtdProdutos() <= 0) {
-                pedido.finalizarPedido(horario);
-                if(LocalTime.of(8, 0).plusMinutes(pedido.getPrazo()).isBefore(horario) && pedido.getPrazo() != 0) {
-                    this.qtdPedidosPerdidos++;
+            if(pedido.getHoraInicio().equals(LocalTime.of(8, 0))) {
+                for (Esteira esteira : esteira) {
+                    esteira.addPedido(pedido);
                 }
-                if(LocalTime.of(12, 0).isAfter(horario)) {
-                    this.qtdPedidosAntes12++;
-                }
-                horarioMedio += horario.getLong(ChronoField.SECOND_OF_DAY);
+            } else {
+                pedidosIncluir.add(pedido);
             }
-            mediaTempoEntrega = LocalTime.ofSecondOfDay(horarioMedio / pedidos.size());
+        }
+    }
+
+    public void executar() {
+        init();
+        while(esteira[0].hasPedido() && esteira[1].hasPedido()) {
+            moverEsteira();
+            for (Esteira esteira : esteira) {
+                try {
+                    esteira.join();
+                } catch (InterruptedException e) {
+                    System.err.println("Thread interrompida");
+                }
+            }
+            for (BracoMecanico bracoMecanico : braco) {
+                Pacote pacote = bracoMecanico.entregar();
+                if(pacote != null) {
+                    analizarDados(pacote.getPedido());
+                }
+            }
+            incluirPedidos();
+        }
+        mediaTempoEntrega = LocalTime.ofSecondOfDay(media / pedidos.size());
+    }
+
+    private void analizarDados(Pedido pedido) {
+        if (pedido.getQtdProdutos() <= 0 && !pedido.isFinalizado()) {
+            pedido.finalizarPedido(horario);
+            if (pedido.getPrazo().isBefore(horario) && !pedido.getPrazo().equals(LocalTime.of(8, 0))) {
+                this.qtdPedidosPerdidos++;
+            }
+            if(LocalTime.of(12, 0).isAfter(horario)) {
+                this.qtdPedidosAntes12++;
+            }
+            media += horario.getLong(ChronoField.SECOND_OF_DAY);
+        }
+    }
+
+    private void incluirPedidos() {
+        List<Pedido> pedidosRemover = new LinkedList<>();
+        for (Pedido pedido : pedidosIncluir) {
+            if(pedido.getHoraInicio().isBefore(horario)) {
+                for (Esteira esteira : esteira) {
+                    esteira.addPedido(pedido);
+                }
+                pedidosRemover.add(pedido);
+            }
+        }
+        for (Pedido pedido : pedidosRemover) {
+            pedidosIncluir.remove(pedido);
         }
     }
 
     private void moverEsteira() {
         horario = horario.plus((int) (1000 * Esteira.TEMPO_TRANSICAO), ChronoUnit.MILLIS);
-        esteira.produzirPacote();
+        for (Esteira esteira : esteira) {
+            esteira.run();
+        }
         horario = horario.plusSeconds(5);
     }
 }

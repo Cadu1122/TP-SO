@@ -1,9 +1,10 @@
 package Business;
 
+import java.time.LocalTime;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Esteira {
+public class Esteira extends Thread {
     public static final float TEMPO_PROD_PACOTE = 5;
     public static final float TEMPO_TRANSICAO = 0.5F;
 
@@ -44,19 +45,27 @@ public class Esteira {
                 qtdProdutos = pedido.getQtdProdutos();
                 removePedido(pedido);
             }
-            pedido.entregarProdutos(qtdProdutos);
-            Pacote pacote = new Pacote(qtdProdutos, pedido);
-            braco.pegar(pacote);
-            return pacote;
+            if(pedido.entregarProdutos() == true) {
+                Pacote pacote = new Pacote(qtdProdutos, pedido);
+                braco.pegar(pacote);
+                return pacote;
+            } else {
+                produzirPacote();
+            }
         }
         return null;
+    }
+
+    @Override
+    public void run() {
+        produzirPacote();
     }
 
     private Pedido selecionarPedido() {
         Pedido escolhido = pedidos.get(0);
         for (Pedido pedido : pedidos) {
             if (pedido.getPrazo() != escolhido.getPrazo()) {
-                if((escolhido.getPrazo() == 0) || (pedido.getPrazo() < escolhido.getPrazo() && pedido.getPrazo() != 0)) {
+                if(escolhido.getPrazo().equals(LocalTime.of(8, 0)) || (pedido.getPrazo().isBefore(escolhido.getPrazo()) && !pedido.getPrazo().equals(LocalTime.of(8, 0)))) {
                     escolhido = pedido;
                 }
             } else {

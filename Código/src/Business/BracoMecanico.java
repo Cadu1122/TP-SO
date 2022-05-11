@@ -12,8 +12,7 @@ public class BracoMecanico {
             Pacote pacote = this.pacote;
             this.pacote = null;
             return pacote;
-        } else {
-            throw new IndexOutOfBoundsException("Não há pacotes para entregar");
         }
+        return null;
     }
 }

@@ -2,6 +2,7 @@ package Interface;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.time.LocalTime;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 import java.util.regex.PatternSyntaxException;
@@ -12,15 +13,16 @@ import Business.Simulacao;
 public class App {
     public static void main(String[] args) {
         Simulacao simulacao = new Simulacao();
-        File file = new File("dados_tp01.txt");
+        File file = new File("dados_tp02.txt");
         Scanner scanner = null;
         try {
             scanner = new Scanner(file);
             String[] pedidos;
-            int qtdPedidos = Integer.parseInt(scanner.nextLine());
-            for(int i = 1; i <= qtdPedidos; i++) {
+            scanner.nextLine();
+            while (scanner.hasNextLine()) {
                 pedidos = scanner.nextLine().split(";");
-                Pedido pedido = new Pedido(pedidos[0], Integer.parseInt(pedidos[1]), Integer.parseInt(pedidos[2]));
+                Pedido pedido = new Pedido(pedidos[0], Integer.parseInt(pedidos[1]),
+                    Integer.parseInt(pedidos[2]), LocalTime.of(8, 0).plusMinutes(Integer.parseInt(pedidos[3])));
                 simulacao.addPedido(pedido);
             }
             simulacao.executar();
