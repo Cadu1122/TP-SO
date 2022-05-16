@@ -4,7 +4,7 @@ import java.time.LocalTime;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Esteira extends Thread {
+public class Esteira {
     public static final float TEMPO_PROD_PACOTE = 5;
     public static final float TEMPO_TRANSICAO = 0.5F;
 
@@ -14,6 +14,10 @@ public class Esteira extends Thread {
     public Esteira(BracoMecanico braco) {
         pedidos = new LinkedList<>();
         this.braco = braco;
+    }
+
+    public BracoMecanico getBraco() {
+        return braco;
     }
 
     public void addPedido(Pedido pedido) {
@@ -54,11 +58,6 @@ public class Esteira extends Thread {
             }
         }
         return null;
-    }
-
-    @Override
-    public void run() {
-        produzirPacote();
     }
 
     private Pedido selecionarPedido() {

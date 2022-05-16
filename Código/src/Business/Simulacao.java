@@ -16,6 +16,7 @@ public class Simulacao {
     private int qtdPedidosAntes12;
     private LocalTime mediaTempoEntrega;
     private long media;
+    private List<Thread> threads;
 
     public Simulacao() {
         horario = LocalTime.of(8, 0);
@@ -29,6 +30,7 @@ public class Simulacao {
         esteira[1] = new Esteira(braco[1]);
         this.qtdPedidosPerdidos = 0;
         this.qtdPedidosAntes12 = 0;
+        threads = new LinkedList<>();
     }
 
     public LocalTime getMediaTempoEntrega() {
@@ -76,24 +78,25 @@ public class Simulacao {
         while(esteira[0].hasPedido() && esteira[1].hasPedido()) {
             moverEsteira();
             for (Esteira esteira : esteira) {
+                threads.add(new Thread(new SysThread(esteira, esteira.getBraco())));
+            }
+            for (Thread thread : threads) {
+                thread.start();
+            }
+            for (Thread thread : threads) {
                 try {
-                    esteira.join();
+                    thread.join();
                 } catch (InterruptedException e) {
                     System.err.println("Thread interrompida");
                 }
             }
-            for (BracoMecanico bracoMecanico : braco) {
-                Pacote pacote = bracoMecanico.entregar();
-                if(pacote != null) {
-                    analizarDados(pacote.getPedido());
-                }
-            }
+            threads.removeAll(threads);
             incluirPedidos();
         }
         mediaTempoEntrega = LocalTime.ofSecondOfDay(media / pedidos.size());
     }
 
-    private void analizarDados(Pedido pedido) {
+    private synchronized void analizarDados(Pedido pedido) {
         if (pedido.getQtdProdutos() <= 0 && !pedido.isFinalizado()) {
             pedido.finalizarPedido(horario);
             if (pedido.getPrazo().isBefore(horario) && !pedido.getPrazo().equals(LocalTime.of(8, 0))) {
@@ -116,16 +119,30 @@ public class Simulacao {
                 pedidosRemover.add(pedido);
             }
         }
-        for (Pedido pedido : pedidosRemover) {
-            pedidosIncluir.remove(pedido);
-        }
+        pedidosIncluir.removeAll(pedidosRemover);
     }
 
     private void moverEsteira() {
         horario = horario.plus((int) (1000 * Esteira.TEMPO_TRANSICAO), ChronoUnit.MILLIS);
-        for (Esteira esteira : esteira) {
-            esteira.run();
-        }
         horario = horario.plusSeconds(5);
+    }
+
+    private class SysThread implements Runnable {
+        private Esteira esteira;
+        private BracoMecanico bracoMecanico;
+        
+        public SysThread(Esteira esteira, BracoMecanico bracoMecanico) {
+            this.esteira = esteira;
+            this.bracoMecanico = bracoMecanico;
+        }
+
+        @Override
+        public void run() {
+            esteira.produzirPacote();
+            Pacote pacote = bracoMecanico.entregar();
+            if(pacote != null) {
+                analizarDados(pacote.getPedido());
+            }
+        }
     }
 }
